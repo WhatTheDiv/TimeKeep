@@ -1,0 +1,155 @@
+1704707520000
+1704797700000
+1704884040000
+1704970620000
+1705064220000
+1707834720000
+
+
+sort array of times: 
+
+raw data:[
+          {"End": 1705950000000, "Id": 111, "Start": 3},
+]
+sorted data:[
+  {"End": 1705950000000, "Id": 111, "Start": 7},
+  {"End": 1705950000000, "Id": 111, "Start": 4},
+  -------------------------------------------------->
+  {"End": 1705950000000, "Id": 111, "Start": 2},
+  {"End": 1705950000000, "Id": 111, "Start": 1},
+
+]
+
+
+
+
+
+
+Stats section - 
+hours last week: 40 ( sunday through saturday ) 
+hours this week: 40 ( sunday through saturday )
+
+
+
+
+
+
+
+
+
+
+hours pocket: 
+- add hours
+- delete hours 
+- edit hours 
+- view hours
+
+
+
+
+0 - sunday        currentDayIndex
+`1 - monday       beginningOfPeriod_dayIndex
+`2 - tuesday        
+`3 - wednesday      
+`4 - thursday           
+`5 - friday       
+6 - saturday      
+
+need 6
+
+
+
+
+
+current = 5 
+workWeekStart = 3 
+need = 4
+
+7 - 5 - 1 + 3
+
+7 - currentDayIndex - 1 + beginningOfPeriod_dayIndex
+7 - 6 + 2
+7 - 3 + 2
+
+FEB 1 to feb 29
+need: {
+  totalDays: 29
+  totalWorkDays: 21
+}
+
+
+
+avgDlrPerPd
+
+find average dollars per hour made in a given range ( daily, weekly, monthly )
+with a given flag (millis of a date)
+
+calculate average dollars per day in a year
+
+*******************
+find average $/h from jan 1 until now
+*******************
+@todo add later // need to find first weekend from start date
+take this off calculation of weekendDaysToSubtract
+
+@todo add later // need to find weekend before end date 
+// take this off calculation of weekendDaysToSubtract 
+
+
+*******************
+
+
+
+
+
+salary: 87360 
+
+range (millis)
+
+( first day tuesday )
+
+const totalDaysInRange = range / millisInADay // get total days in range
+const weeks = totalDaysInRange / 7
+          -- how is remainder relevant? 
+const weekendDaysToSubtract = weeks * 2 // remove weekend days 
+
+const workDaysInRange = totalDaysInRange - weekendDaysToSubtract 
+
+const weeklySalary = salary / 52
+const dailySalary = weeklySalary / 5
+
+const totalHoursWorkedInRange = 
+const totalSalaryEarnedInRange = dailySalary * workDaysInRange
+
+const dollarsPerHour = totalSalaryEarnedInRange / totalHoursWorkedInRange
+
+{
+  
+  "s_getDay": 6, 
+  "e_getDay": 6, 
+  "adjust": 0, 
+  "diffDays": 6.191348935185185, 
+  "end": 1706331600671, 
+  "result": 5, 
+  "start": 1705796668123, 
+  "test": 6.191348935185185, 
+  "weeksBetween": 1
+}
+
+(16)
+
+
+
+0 - 22
+1 - 20 
+2 - 218
+3 - 17
+4 - 15
+5 - 10
+6 - 8
+7 - 6
+8 - 5
+9 - 1
+10 - 0
+
+

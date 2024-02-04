@@ -1,0 +1,17 @@
+
+=======    To Do List    =======
+
+- fix issue with multiple active start times 
+- add edit option to edit hours 
+- recalculate after editing times, adding times, deleting times 
+- Populate breakdown in stats section when selecting hour in view tab, maybe?
+- 
+
+
+
+=======    Bugs    =======
+when delete all data pressed while clocked in , hours & stats dont load 
+
+
+
+- AsyncStorage for settings
